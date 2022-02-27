@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+
+html{
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    height: 100%;
+    margin: 0px;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 25% 30% 20% 25%;
+    grid-template-rows: 1.7fr 3fr 1fr;
+    grid-template-areas: "head1 head1 head2 head2"
+                         ". . head2 head2"
+                         "head3 head3 head2 head2";
+}
+
+#header1{
+    grid-area: head1;
+}
+
+#header1 img{
+    width: 130%;
+}
+
+#header2{
+    grid-area: head2;
+    padding-right: 60px;
+}
+
+#header-main-img{
+    width: 100%;
+    height: 100%;
+}
+
+#header3{
+    grid-area: head3;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.how-to{
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1.4fr 0.8fr 1.5fr;
+    grid-template-areas: "titleLog titleLog firstCol"
+                         "secondCol midLog midLog"
+                         "linesLog linesLog linesLog";
+}
+
+#how-to-div1{
+    grid-area: titleLog;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#how-to-div1 img{
+    position: relative;
+    width: 63.5%;
+    top: 33.5%;
+    margin-left: 35px;
+}
+
+.big-title{
+    font-size: 10vw;
+    line-height: 12.5vw;
+    margin-left: 15px;
+    position: absolute;
+}
+
+.dot{
+    width: 11.5vw;
+    height: 11.5vw;
+    border-radius: 20vw;
+    background: #000000;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.dot-list{
+    margin-top: 200px;
+    margin-bottom: 0px;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.dot-list span{
+    font-size: 80px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 200;
+}
+
+.dot-list h3{
+    font-size: 110px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 200;
+    margin: 0px;
+    border-bottom: 1px solid #000000;
+}
+
+.dot-list-line{
+    border-bottom: 1px solid #000000;
+    padding: 20px 0 3px 0;
+}
+
+
+.dot-name{
+    font-size: 24px;
+    width: 600px;
+}
+
+.dot-onoff{
+    max-width: 140px;
+    font-size: 16px;
+    position: relative;
+    left: 90%;
+    top: -22px;
+    text-transform: uppercase;
+}
+
+#how-to-div4 img{
+    width: 98%;
+}
+
+#how-to-div5 span{
+    font-size: 80px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 200;
+}
+
+#how-to-div5 h3{
+    font-size: 110px;
+    font-weight: 200;
+    margin: 0px;
+    line-height: 100%;
+    position: relative;
+    margin-left: 50%;
+    margin-top: 60px;
+}
+
+.liner{
+    position: relative;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid #000000;
+}
+
+.device-list-line{
+    position: relative;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid #000000;
+    max-height: 8%;
+}
+
+.device-name{
+    font-size: 80px;
+    width: 700px;
+    line-height: 100%;
+    position: relative;
+    top: 35px;
+}
+
+.device-onoff{
+    width: 600px;
+    font-size: 30px;
+    position: relative;
+    left: 68%;
+    top: -10px;
+    text-align: right;
+}
+
+#how-to-div5 img{
+    width: 47.7%;
+    height: 50%px;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.schedule{
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1.4fr 1fr 1fr 1fr 1.2fr;
+    grid-template-areas: "titleSched titleSched 1SchedCol"
+                         "2SchedCol 3SchedLog empty1"
+                         "empty2 4SchedLog empty3"
+                         "empty4 empty4 5SchedLog"
+                         "6SchedLog 7SchedLog empty5";
+}
+
+#schedule-div1{
+    grid-area: titleSched;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#schedule-div2{
+    grid-area: 1SchedCol;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#schedule-div3{
+    grid-area: 2SchedCol;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#schedule-div4{
+    grid-area: 3SchedCol;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#schedule-div5{
+    grid-area: empty1;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#schedule-div6{
+    grid-area: empty2;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#schedule-div7{
+    grid-area: 4SchedCol;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#schedule-div8{
+    grid-area: empty3;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#schedule-div9{
+    grid-area: empty4;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#schedule-div10{
+    grid-area: 5SchedCol;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#schedule-div11{
+    grid-area: 6SchedCol;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#schedule-div12{
+    grid-area: 7SchedCol;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#schedule-div13{
+    grid-area: empty5;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.sched-name{
+    font-size: 24px;
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+.sched-list{
+    margin-top: 100px;
+    margin-bottom: 0px;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.sched-list span{
+    font-size: 80px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 200;
+}
+
+.sched-list h3{
+    font-size: 110px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 200;
+    margin: 0px;
+    border-bottom: 1px solid #000000;
+}
+
+#how-to-div1 h2{
+    margin: 0px;
+}
+
+#how-to-div2{
+    grid-area: firstCol;
+}
+
+#how-to-div3{
+    grid-area: secondCol;
+}
+
+#how-to-div4{
+    grid-area: midLog;
+}
+
+#how-to-div5{
+    grid-area: linesLog;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.yellow-bg{
+    background-color: rgb(255, 204, 0);
+}
+
+.blue-bg{
+    background-color: rgb(0, 153, 255);
+}
+
+.purple-bg{
+    background-color: rgb(102, 0, 153);
+}
+
+.container-fluid{
+    width: 100%;
+}
+
+.wrapper-bands{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 200px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 2.7fr;
+    grid-template-areas: "band1"
+                         "band2"
+                         "band3"
+                         "image";
+}
+
+.wrapper-bands p{
+    margin: 0;
+}
+
+#band-1{
+    grid-area: band1;
+    height: fit-content;
+}
+
+#band-2{
+    grid-area: band2;
+    height: fit-content;
+}
+
+#band-3{
+    grid-area: band3;
+    height: fit-content;
+}
+
+#wrapper-image{
+    grid-area: image;
+}
+
+#wrapper-image div{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#wrapper-image img{
+    position: absolute;
+    top: 36.2%;
+    left: 17%;
+}
+
+.jazz-in-ro{
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1;
+    grid-template-areas: "sticker jazzList";
+}
+
+.jazz-list{
+    margin-bottom: 0px;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.jazz-list span{
+    font-size: 80px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 200;
+}
+
+.jazz-list h3{
+    font-size: 110px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 200;
+    margin: 0px;
+    border-bottom: 1px solid #000000;
+}
+
+.dot-onoff2{
+    text-align: right;
+    max-width: 140px;
+    font-size: 16px;
+    position: relative;
+    left: 84%;
+    top: -22px;
+    text-transform: uppercase;
+}
+
+.dot-onoff3{
+    text-align: right;
+    max-width: 140px;
+    font-size: 16px;
+    position: relative;
+    left: 81%;
+    top: -22px;
+    text-transform: uppercase;
+}
+
+.last{
+    height: 955px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1;
+    grid-template-areas: "mouth upArrow";
+}
+
+#footer1{
+    grid-area: mouth;
+    background-color: #660099;
+}
+
+#footer1 div{
+    width: 70%;
+    height: 70%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 20%;
+}
+
+#footer1 img{
+    width: 72%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer2{
+    grid-area: upArrow;
+    background-color: #ff3333;
+}
+
+#footer2 div{
+    width: 70%;
+    height: 70%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 20%;
+}
+
+#footer2 img{
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.big-title {
+	font-size: 10.36vw;
+	line-height: 12.5vw;
+	margin-top: -1.8vw;
+    text-transform: uppercase;
+font-family: 'Matter Bold';
+letter-spacing: -4.25px;
+}
+.wrapper-stick{
+
+    font-size: 10.36vw;
+    line-height: 12.5vw;
+    margin-top: -1.8vw;
+    text-transform: uppercase;
+    position: absolute;
+    top: 17800px;
+}
+.offset-md-1 {
+	margin-left: 8.33333%;
+}
+.col-md-4 {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 33.33333%;
+	flex: 0 0 33.33333%;
+	max-width: 33.33333%;
+}
+.row {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-right: -20px;
+	margin-left: -20px;
+}
+.jazz-in-ro .sheep {
+	margin-top: 4rem;
+	width: 100%;
+	max-width: 100%;
+}
